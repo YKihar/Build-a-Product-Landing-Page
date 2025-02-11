@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">  <img src="logo.png" alt="Company Logo" id="header-img">
+            <nav id="nav-bar">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#video" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="features">
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>  <h2>Premium Materials</h2>
+                <p>Made with the highest quality space-grade aluminum.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shipping-fast"></i> <h2>Fast Shipping</h2>
+                <p>Free returns and 24/7 customer support.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i> <h2>Quality Assurance</h2>
+                <p>Rigorous testing for optimal performance.</p>
+            </div>
+        </section>
+
+        <section class="video-container">
+            <iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/0"  frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="price-card">
+                <h3>Basic</h3>
+                <p class="price">$199</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> 1 Year Warranty</li>
+                    <li><i class="fas fa-check"></i> Basic Features</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+            <div class="price-card">
+                <h3>Pro</h3>
+                <p class="price">$299</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> 2 Year Warranty</li>
+                    <li><i class="fas fa-check"></i> Premium Features</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="submit" id="submit" value="Get Started" class="btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TechGadget Pro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
