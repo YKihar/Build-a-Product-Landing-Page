@@ -1,0 +1,151 @@
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+#header {
+    position: fixed; /* Fixed navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 1rem 0;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 100; /* Ensure it's on top */
+}
+
+#header-img {
+    height: 50px; /* Adjust as needed */
+}
+
+#nav-bar {
+    display: flex; /* Flexbox for navigation links */
+    gap: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+/* Main content */
+main {
+    padding: 80px 2rem 2rem; /* Add top padding to avoid overlap with fixed header */
+}
+
+/* Features section */
+#features {
+    display: flex; /* Flexbox for feature cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-card {
+    flex: 1 1 300px; /* Responsive sizing */
+    padding: 2rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.feature-card i { /* Style for Font Awesome icons */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Example color */
+}
+
+/* How it works section */
+#how-it-works {
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    text-align: center;
+}
+
+#video {
+    max-width: 100%;
+}
+
+/* Pricing section */
+#pricing {
+    display: flex; /* Flexbox for price cards */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.price-card {
+    flex: 1 1 250px; /* Responsive sizing */
+    padding: 2rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Form */
+#form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#email {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+#submit {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #nav-bar {
+        flex-direction: column; /* Stack nav links */
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    #features, #pricing {
+        flex-direction: column; /* Stack cards */
+    }
+
+    #video {
+        width: 100%; /* Make video responsive */
+    }
+}
