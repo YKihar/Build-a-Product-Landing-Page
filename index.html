@@ -3,71 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechGadget Pro</title>
+    <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="header">
-        <div class="header-content">  <img src="logo.png" alt="Company Logo" id="header-img">
-            <nav id="nav-bar">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#video" class="nav-link">How It Works</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-            </nav>
-        </div>
+        <img src="logo.png" alt="Product Logo" id="header-img">
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
     </header>
 
     <main>
         <section id="features">
+            <h2>Features</h2>
             <div class="feature-card">
-                <i class="fas fa-rocket"></i>  <h2>Premium Materials</h2>
-                <p>Made with the highest quality space-grade aluminum.</p>
+                <i class="fas fa-rocket"></i>
+                <h3>Feature 1</h3>
+                <p>Description of feature 1.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-shipping-fast"></i> <h2>Fast Shipping</h2>
-                <p>Free returns and 24/7 customer support.</p>
+                <i class="fas fa-bolt"></i>
+                <h3>Feature 2</h3>
+                <p>Description of feature 2.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-shield-alt"></i> <h2>Quality Assurance</h2>
-                <p>Rigorous testing for optimal performance.</p>
+                <i class="fas fa-cog"></i>
+                <h3>Feature 3</h3>
+                <p>Description of feature 3.</p>
             </div>
         </section>
 
-        <section class="video-container">
-            <iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/0"  frameborder="0" allowfullscreen></iframe>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="video-container">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/your_youtube_video_id" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="pricing">
+            <h2>Pricing</h2>
             <div class="price-card">
                 <h3>Basic</h3>
-                <p class="price">$199</p>
-                <ul>
-                    <li><i class="fas fa-check"></i> 1 Year Warranty</li>
-                    <li><i class="fas fa-check"></i> Basic Features</li>
-                </ul>
-                <button class="btn">Select</button>
+                <p>$99</p>
+                <button>Select</button>
             </div>
             <div class="price-card">
                 <h3>Pro</h3>
-                <p class="price">$299</p>
-                <ul>
-                    <li><i class="fas fa-check"></i> 2 Year Warranty</li>
-                    <li><i class="fas fa-check"></i> Premium Features</li>
-                </ul>
-                <button class="btn">Select</button>
+                <p>$199</p>
+                <button>Select</button>
+            </div>
+            <div class="price-card">
+                <h3>Premium</h3>
+                <p>$299</p>
+                <button>Select</button>
             </div>
         </section>
 
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+        <form id="form" action="https://www.freecodecamp.org/email-submit" method="get">
             <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-            <input type="submit" id="submit" value="Get Started" class="btn">
+            <input type="submit" id="submit" value="Submit">
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2023 TechGadget Pro. All rights reserved.</p>
+        <p>&copy; 2023 My Product</p>
     </footer>
+</body>
+</html>
 
 </body>
 </html>
